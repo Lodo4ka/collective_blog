@@ -77,7 +77,7 @@ group :test do
   gem 'webdrivers'
 end
 
-gem 'rubocop-rails', require: false
+gem 'brakeman'
 gem 'bundler-audit', require: false
+gem 'rubocop-rails', require: false
 gem 'ruby_audit', require: false
-
