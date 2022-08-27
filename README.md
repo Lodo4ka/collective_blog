@@ -25,5 +25,4 @@ Things you may want to cover:
 
 https://tranquil-refuge-86972.herokuapp.com/
 
-
 [![Actions Status](https://github.com/Lodo4ka/collective_blog/actions/workflows/rubyonrails.yml/badge.svg)](https://github.com/Lodo4ka/collective_blog/actions)

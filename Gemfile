@@ -79,5 +79,6 @@ end
 
 gem 'brakeman'
 gem 'bundler-audit', require: false
+gem 'devise'
 gem 'rubocop-rails', require: false
 gem 'ruby_audit', require: false
