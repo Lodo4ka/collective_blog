@@ -1,2 +1,6 @@
 // here your custom bootstrap variables...
 @import "bootstrap";
+
+main > .container {
+  padding: 60px 15px 0;
+}
