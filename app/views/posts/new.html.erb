@@ -1,0 +1,17 @@
+<%= simple_form_for(@post, data: { turbo: false }) do |form| %>
+  <%= render "devise/shared/error_messages", resource: @post %>
+  <div class="form-inputs mb-3">
+    <div class="col-6">
+      <%= form.input :title, autofocus: true %>
+    </div>
+    <div class="col-6">
+      <%= form.input :body, as: :text, input_html: { rows: 5 } %>
+    </div>
+    <div class="col-6">
+      <%= form.association :post_category %>
+    </div>
+  </div>
+  <div class="form-actions">
+    <%= form.button :submit, 'Create post', class: 'btn-primary' %>
+  </div>
+<% end %>

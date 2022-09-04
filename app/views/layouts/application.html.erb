@@ -14,7 +14,11 @@
   <header>
     <%= render 'layouts/navbar' %>
   </header>
-    <%= yield %>
+  <main class="flex-shrink-0">
+    <div class="container">
+      <%= yield %>
+    </div>
+  </main>
   <footer class="footer mt-auto py-3 bg-light">
     <%= render 'layouts/footer' %>
   </footer>

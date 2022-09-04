@@ -86,3 +86,4 @@ gem 'bundler-audit', require: false
 gem 'devise'
 gem 'rubocop-rails', require: false
 gem 'ruby_audit', require: false
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
