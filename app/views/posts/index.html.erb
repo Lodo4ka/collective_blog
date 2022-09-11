@@ -1,5 +1,9 @@
 <h1>Posts</h1>
 
+<div>
+  <%= link_to 'Create new post', new_post_path, class: 'btn btn-primary mb-2' %>
+</div>
+
 <div class="row">
   <% @posts.each do |post| %>
       <div class="card card-body mb-3">

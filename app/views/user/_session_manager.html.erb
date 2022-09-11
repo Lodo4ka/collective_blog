@@ -4,7 +4,7 @@
       <%= current_user.email %>
     </a>
     <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
-      <li><%= link_to "New Post", post_new_path, class:"dropdown-item" %>
+      <li><%= link_to "New Post", new_post_path, class:"dropdown-item" %>
 <!--      <li><%#= link_to "Edit Account", edit_user_registration_path, class:"dropdown-item" %></li>-->
 <!--      <li><hr class="dropdown-divider"></li>-->
       <li><%= button_to "Sign out", destroy_user_session_path, method: :delete, class:"dropdown-item" %></li>

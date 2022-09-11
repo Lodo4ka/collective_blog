@@ -18,3 +18,14 @@
     </div>
   </article>
 </div>
+
+<%= render partial: 'posts/comments/post_comment',
+           collection: @comments,
+           as: :post_comment
+%>
+
+<%# if user_signed_in? %>
+  <%#= render 'posts/comments/form', comment: @comment, url: post_comments_path(@post), parent_comment_id: nil %>
+<%# end %>
+
+

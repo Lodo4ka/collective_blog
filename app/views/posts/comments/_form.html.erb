@@ -1,0 +1,16 @@
+<%= simple_form_for comment, url: url, data: { turbo: false } do |form| %>
+  <%= form.error_notification %>
+  <%= form.error_notification message: form.object.errors[:base].to_sentence if form.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <div class="mb-3">
+      <%= form.input :content, label: false %>
+      <% if parent_id.present? %>
+        <%= form.input :parent_id, as: :hidden, input_html: { value: parent_id }  %>
+      <% end %>
+    </div>
+    <div>
+      <%= form.button :submit, 'comment', class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>
