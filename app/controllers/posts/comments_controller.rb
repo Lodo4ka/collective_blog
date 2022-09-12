@@ -7,9 +7,9 @@ class Posts::CommentsController < ApplicationController
     @comment.user = current_user
 
     if @comment.save
-      redirect_to @post
+      redirect_to post_path(@post)
     else
-      redirect_to @post, alert: @comment.errors.objects.first.full_message
+      redirect_to post_path(@post), alert: @comment.errors.objects.first.full_message
     end
   end
 

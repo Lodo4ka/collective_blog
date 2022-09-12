@@ -1,7 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  user: one
+  post: one
   content: MyString
+  ancestry:
 
 two:
+  user: two
+  post: two
   content: MyString
+  ancestry: 1
