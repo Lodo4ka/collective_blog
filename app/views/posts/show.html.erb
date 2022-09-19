@@ -6,7 +6,7 @@
     <p>
       <%= @post.body %>
     </p>
-    <div class="d-flex justify-content-between">
+    <div>
       <div class="post-section">
         <span>
           <%= @post.creator.email %>
@@ -15,6 +15,10 @@
           <%= time_ago_in_words(@post.created_at) %>
         </span>
       </div>
+      <%= render 'posts/likes/like_post',
+                 post: @post,
+                 like: @current_user_like_from_post
+      %>
     </div>
   </article>
 </div>

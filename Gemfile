@@ -45,6 +45,7 @@ gem 'bootsnap', require: false
 gem "sassc-rails"
 
 gem 'bootstrap', '~> 5.1.3'
+gem "font-awesome-sass", "~> 6.2.0"
 
 gem 'simple_form'
 

@@ -21,6 +21,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @current_comment = @post.comments.build
     @comments = @post.comments.includes(:user)
+    @current_user_like_from_post = @post.likes.find_by(user: current_user)
   end
 
   def new

@@ -1,0 +1,23 @@
+<div class="likes-section">
+  <div>
+    likes: <%= post.likes.count %>
+  </div>
+  <span class="me-2">
+    <% if like.present? %>
+      <%#= link_to post_like_path(post.id, like), method: :delete, data: { turbo: false } do %>
+      <!--        <i class="fas fa-thumbs-up text-secondary"></i>-->
+      <%# end %>
+      <%= button_to post_like_path(post, like), method: :delete, class: 'btn' do %>
+        <i class="fas fa-thumbs-up text-primary"></i>
+      <% end %>
+    <% else %>
+    <%#= link_to post_likes_path(post.id), method: :post, data: { turbo: false } do %>
+    <!--        <i class="fas fa-thumbs-up text-secondary"></i>-->
+    <%# end %>
+    <%#= link_to 'Create like', post_likes_path(post.id, nil), data: { "turbo-method": :delete } %>
+    <%= button_to post_likes_path(post), method: :post, class: 'btn' do %>
+        <i class="fas fa-thumbs-up text-secondary"></i>
+      <% end %>
+    <% end %>
+  </span>
+</div>

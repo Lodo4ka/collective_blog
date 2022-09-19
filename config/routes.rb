@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   # post 'posts', to: 'posts#create'
   resources :posts, only: %w[index show create new] do
     resources :comments, only: %w[create], module: 'posts'
+    resources :likes, only: %w[create destroy], module: 'posts'
   end
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
