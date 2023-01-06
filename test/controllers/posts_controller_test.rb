@@ -1,8 +1,9 @@
-require "test_helper"
+# frozen_string_literal: true
+
+require 'test_helper'
 
 class PostsControllerTest < ActionDispatch::IntegrationTest
   include Devise::Test::IntegrationHelpers
-
 
   setup do
     @post = posts(:one)
@@ -14,18 +15,17 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     }
   end
 
-  test "should get index" do
+  test 'should get index' do
     get posts_path
     assert_response :success
   end
 
-
-  test "should get show" do
+  test 'should get show' do
     get post_path @post
     assert_response :success
   end
 
-  test "should get new" do
+  test 'should get new' do
     sign_in @user
     get post_new_path
     assert_response :success

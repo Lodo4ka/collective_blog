@@ -1,13 +1,17 @@
-require "test_helper"
+# frozen_string_literal: true
 
-class Posts::LikesControllerTest < ActionDispatch::IntegrationTest
-  test "should get create" do
-    get posts_likes_create_url
-    assert_response :success
-  end
+require 'test_helper'
 
-  test "should get destroy" do
-    get posts_likes_destroy_url
-    assert_response :success
+module Posts
+  class LikesControllerTest < ActionDispatch::IntegrationTest
+    test 'should get create' do
+      get posts_likes_create_url
+      assert_response :success
+    end
+
+    test 'should get destroy' do
+      get posts_likes_destroy_url
+      assert_response :success
+    end
   end
 end

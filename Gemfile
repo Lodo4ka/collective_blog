@@ -42,10 +42,10 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'bootsnap', require: false
 
 # Use Sass to process CSS
-gem "sassc-rails"
+gem 'sassc-rails'
 
 gem 'bootstrap', '~> 5.1.3'
-gem "font-awesome-sass", "~> 6.2.0"
+gem 'font-awesome-sass', '~> 6.2.0'
 
 gem 'simple_form'
 
@@ -82,10 +82,10 @@ group :test do
   gem 'webdrivers'
 end
 
+gem 'ancestry'
 gem 'brakeman'
 gem 'bundler-audit', require: false
 gem 'devise'
+gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 gem 'rubocop-rails', require: false
 gem 'ruby_audit', require: false
-gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
-gem 'ancestry'
