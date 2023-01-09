@@ -31,3 +31,4 @@
 
 en:
   hello: "Hello world"
+  post_created: 'Post was created successfully!'
