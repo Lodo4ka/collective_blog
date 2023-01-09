@@ -12,7 +12,7 @@ module Posts
       @like = current_user.likes.find(params[:id])
       post = @like.post
       @like.destroy
-      redirect_to post
+      redirect_to post_path(post)
     end
   end
 end

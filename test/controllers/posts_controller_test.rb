@@ -11,7 +11,7 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     @attrs = {
       title: Faker::Book.title,
       body: Faker::Lorem.paragraph_by_chars(number: 200),
-      category_id: post_category(:one).id
+      post_category_id: post_categories(:one).id
     }
   end
 
@@ -27,7 +27,7 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
 
   test 'should get new' do
     sign_in @user
-    get post_new_path
+    get new_post_path
     assert_response :success
   end
 
@@ -48,6 +48,6 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     post posts_path, params: { post: @attrs }
     found_post = Post.find_by @attrs
     assert found_post
-    assert_redirected_to posts_path(found_post)
+    assert_redirected_to posts_path
   end
 end
