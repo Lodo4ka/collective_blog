@@ -90,6 +90,6 @@ gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 gem 'rubocop-rails', require: false
 gem 'ruby_audit', require: false
 
-gem "dockerfile-rails", ">= 1.0.0", :group => :development
+gem 'dockerfile-rails', '>= 1.0.0', group: :development
 
-gem "redis", "~> 5.0"
+gem 'redis', '~> 5.0'
